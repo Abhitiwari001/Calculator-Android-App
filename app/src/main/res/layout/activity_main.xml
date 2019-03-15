@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et1"
+        android:hint="Enter first Number"
+        android:layout_marginTop="120dp"
+        android:inputType="number"
+        android:onClick="first"
+         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et2"
+        android:hint="Enter second Number"
+        android:layout_marginTop="180dp"
+        android:inputType="number"
+        android:onClick="second"
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+       android:layout_marginTop="240dp"
+        android:text="ADD"
+        android:onClick="sum"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorsub"
+        android:layout_marginTop="240dp"
+        android:text="  SUB"
+        android:onClick="sub"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMulti"
+        android:layout_marginTop="240dp"
+        android:text="  DIVIDE"
+        android:onClick="divide"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="240dp"
+        android:text="  MULTIPLY"
+        android:onClick="multiply"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear"
+        android:text="clear"
+        android:onClick="clear"
+       android:layout_marginTop="310dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sine"
+        android:text="Sine"
+        android:onClick="sine"
+        android:layout_marginTop="310dp"
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cosine"
+            android:text="Cosine"
+            android:onClick="cosine"
+            android:layout_marginTop="310dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tan"
+            android:text="Tan"
+            android:onClick="tan"
+            android:layout_marginTop="310dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:id="@+id/r"
+        android:textSize="30sp"
+        android:text="Result"
+        />
+</RelativeLayout>
